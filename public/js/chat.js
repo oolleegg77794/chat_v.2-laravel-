@@ -16,16 +16,16 @@ $.ajaxSetup({
           url: "/sendMessage",
           data:  {message:message, name:name},
           success: function(data){
-            $('#message').val('');  
+            $('#message').val('');
           }
-        })  
+        })
       })
     })
 
     function getNotification(){
       $('#messages').append('<div class="alert alert-primary" role="alert">User '+name+' entered  chat</div>');
     }
-    
+
 
 $(document).ready(function(){
   getNewMessages();
@@ -57,4 +57,3 @@ function getNewMessages(){
 }
 
 
-  
